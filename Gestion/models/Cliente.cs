@@ -4,15 +4,21 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Gestion
+namespace Gestion.models
 {
     internal class Cliente
     {
+        private int id;
         private string name;
         private string lastName;
         private string email;
         private string numCel;
 
+        public int Id 
+        {
+            get {return id;}
+            set {id = value;} 
+        }
         public string Name
         {
             get { return name; } //get;
@@ -22,7 +28,7 @@ namespace Gestion
 
         public string LastName
         {
-            get { return lastName;}
+            get { return lastName; }
             set { lastName = value; }
         }
         public string Email
@@ -38,13 +44,15 @@ namespace Gestion
 
         public string FullName
         {
-            get { return name+" "+lastName; }
+            get { return name + " " + lastName; }
         }
+
+      
 
         public override string ToString()
         {
             return FullName;
-        } 
+        }
     }
 
 

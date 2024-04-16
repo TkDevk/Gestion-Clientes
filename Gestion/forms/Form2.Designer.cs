@@ -39,6 +39,9 @@
             label2 = new Label();
             label3 = new Label();
             label4 = new Label();
+            editBtn = new Button();
+            label5 = new Label();
+            labelId = new Label();
             SuspendLayout();
             // 
             // listClients
@@ -134,11 +137,41 @@
             label4.TabIndex = 10;
             label4.Text = "Phone";
             // 
+            // editBtn
+            // 
+            editBtn.Location = new Point(318, 324);
+            editBtn.Name = "editBtn";
+            editBtn.Size = new Size(75, 23);
+            editBtn.TabIndex = 11;
+            editBtn.Text = "Edit";
+            editBtn.UseVisualStyleBackColor = true;
+            editBtn.Click += button3_Click;
+            // 
+            // label5
+            // 
+            label5.AutoSize = true;
+            label5.Location = new Point(410, 57);
+            label5.Name = "label5";
+            label5.Size = new Size(26, 15);
+            label5.TabIndex = 12;
+            label5.Text = "Id : ";
+            // 
+            // labelId
+            // 
+            labelId.AutoSize = true;
+            labelId.Location = new Point(493, 58);
+            labelId.Name = "labelId";
+            labelId.Size = new Size(0, 15);
+            labelId.TabIndex = 13;
+            // 
             // Form2
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(labelId);
+            Controls.Add(label5);
+            Controls.Add(editBtn);
             Controls.Add(label4);
             Controls.Add(label3);
             Controls.Add(label2);
@@ -170,5 +203,8 @@
         private Label label2;
         private Label label3;
         private Label label4;
+        private Button editBtn;
+        private Label label5;
+        private Label labelId;
     }
 }
